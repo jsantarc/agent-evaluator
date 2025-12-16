@@ -1,14 +1,13 @@
 
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import gradio as gr
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 
 # Load env vars (optional in App Runner, but fine locally)
-load_dotenv()
-
+#load_dotenv(
 # LLM (reads OPENAI_API_KEY from env automatically)
 llm = ChatOpenAI(model="gpt-4o-mini")
 
