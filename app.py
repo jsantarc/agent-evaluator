@@ -1,6 +1,6 @@
-from dotenv import load_dotenv
-import os
 
+import os
+from dotenv import load_dotenv
 import gradio as gr
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
